@@ -1,2 +1,2 @@
 # CA106
-DCU Year 1 Web Design personal website project.
+DCU Year 1 Web Design group and personal projects.
