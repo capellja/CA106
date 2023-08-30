@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- TODO: Add a short description of your site here. 
+	       This is what google will look up when browsing so be sure to
+	       not forget to mention key buzz words e.g. fitness, diet, workout, etc. -->
+    <meta name="description" = "" />
+    <meta name="viewport" ="width=device-width, initial-scale=1">
+    <title>Culann's Hounds</title>
+
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <!-- TODO: If you want to insert your own .css uncoment this 
+	<link rel="stylesheet" type="text/css" href="<css name>">
+    -->   
+    
+    <!-- Don't worry about this. At. All.  -->
+    <script>
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+	var prevScrollPos = window.pageYOffset;
+	window.onscroll = function() {
+	    var currentScrollPos = window.pageYOffset;
+	    if (prevScrollPos > currentScrollPos) {
+	        document.getElementById("navbar").style.top = "0";
+	    } else {
+	        document.getElementById("navbar").style.top = "-50px";
+	    }
+	    prevScrollPos = currentScrollPos;
+	}
+    </script>
+</head>
+<body class="bg-0">
+    <main>
+	<!-- NAVBAR -->
+	<!--  DO NOT TOUCH, IT IS A WORK IN PROGRESS -->
+	<nav id="navbar" class="bg-tr px-1">
+	    <a class="f-2 fg-2 fgh-3 active">Home</a>
+	    <a class="f-2 fg-2 fgh-3">Bravo</a>
+	    <a class="f-2 fg-2 fgh-3">Charlie</a>
+	    <a class="f-2 fg-2 fgh-3">Delta</a>
+	    <a class="f-2 fg-2 fgh-3">Golf</a>
+	</nav>
+
+	<section>
+	    <!-- TO DO: Pick an image for your heading's background (Make it grayscale; its a matter of style) -->
+	    <div class="title-poster"> <div style="background-image: url('images/gymfloor.jpg">
+		<div class="title-poster-mask">
+		    <div class="title-v-center h-center text-center">
+			<!-- TODO: Put your article's title here -->
+			<h1 class="f-3 fg-2">Sports Nutrition <br> ( Supplements )</b></h1>
+		    </div>
+		</div>
+	    </div>
+	</section>
+	
+	<section>
+	    <div class="px-1 my-3">
+		<!-- TO DO: put your content here -->
+
+		<!-- whenever you wish to add a title to your content
+		     use this <h3> with all its classes. It's already prestyled. -->
+		<h3 class="text-uppercase f-1 fg-2 text-center">What are Sports Supplements ?</h3>
+		
+		<!-- A quick word on how styling works. I wish to avoid unneccessary .css so I have made general
+                     purpuse classes. Just stick them on whichever element you want.
+		    
+			* bg-0, bg-1, bg-2, bg-3 - set the background color. 0 being the darkest color,
+						   and 3 being the lightest color in our color pallete. 
+			    - bg-tr - exists to make the background transparent if nesscessary. 
+			
+			* fg-0, ..., fg-3 - set the foreground color. Use this for text coloring. fg-0 and 
+					    bg-0 are the same color. So are the rest of the coresponding 
+                                            bg and fg colors. 
+			
+			* bgh-0, ..., bgh-3 - sets the background color vhen the mouse hovers over the element 
+
+			* fgh-0, ..., fgh-3 - sets the foreground color vhen the mouse hovers over the element 
+			
+			* my-0, ..., my-3 - will add vertical margins. 0 is no margins. 3 is the largest margin. 
+					    Use this to space your content, i.e. add sepparation to your paragraphs.  
+
+			* f-0, ..., f-3 - set the font size. You'll find yourself mostly using f-2. 
+		    
+			
+		    If you wanna use a button, put the .btn class on it. 
+
+		    When you use a link, put a link class on it.			
+
+		    For images do as you please. I'll put it in order later.
+
+		    Take care of your grammar 'cause I ain't gonna check.	
+
+
+		    Look at the below sample for examples. 
+		-->
+		
+		<p class="text-center my-1 fg-3 f-2 my-3">
+		   Millions of people take sports nutrition / supplements hoping for a range of health benefits, from weight loss to muscle building.<br> Paired with a healthy diet, the world of sports nutrition is worth discovering for those looking to extract the most results from each and every workout in order optimise and make serious progress. <br>
+		  
+		<p class="my-1 fg-3 f-2 my-3 text-center" style="text-indent:1cm;">
+			Sports supplements have become increasingly popular among gym-goers.
+			People interested in fitness and improving their physique may opt for supplements that can enhance their muscle growth when combined with exercise, such as weightlifting.
+			<br>They may also look for ways to control their appetite when they're trying to lose weight as part of a bodybuilding diet.
+		<div class="dyn-row">
+		    <div class="dyn-col">      
+			<div class="px-2">     
+				<ul class="my-1 fg-3 f-2 my-3 text-center">
+					<p><b><u>Recommended  Research Websites </u></b></p>
+					   <ul>
+					
+						   <a class="link" href="https://examine.com/"><img src="images/examine.png" height="50"></a> <br>
+						 <a class="link" href="https://labdoor.com/"><img src="images/labdoor-logo.png" width= "20%"></a>
+					   </ul>
+				 </ul>
+			</div>                 
+		    </div>                     
+		    
+		    <div class="dyn-col">
+			<div class="px-2">
+			    <p class="text-center my-1 fg-2 f-2">
+					<br><br><br></r><i>"In 2012, more than 3 million people were reported to be using or to have used ergogenic supplements in the United States"</i> <br> <a class="link" href="https://www.hsph.harvard.edu/nutritionsource/workout-supplements/">- Harvard T.H. Chan School of Public Health </a>
+				</p>
+			</div>
+		    </div>
+		</div>
+	
+		
+	    </div>
+
+
+
+	    <!--
+		If you want to have two columns, copy this
+		
+		<div class="dyn-row">
+		    <div class="dyn-col">      |
+			<div class="px-2">     |
+			    Content Goes Here  |   YOU CAN COPY THIS PART AS MANY TIMES AS 
+			</div>                 |   YOU WANT, it will automatically fold over
+		    </div>                     |   when the screen is smaller
+		    
+		    <div class="dyn-col">
+			<div class="px-2">
+			    Content Goes Here
+			</div>
+		    </div>
+		</div>
+	    -->
+	    <div class="px-1">	
+		
+		<div class="dyn-row">
+		    <div class="dyn-col">
+			<div class="px-2">
+			    <h3 class="text-center text-uppercase f-1 fg-2">Common Consumables</h3>
+			    <ul class="f-2 fg-3" style="10px; border: 10px solid black;
+				outline-style: outset;
+ 				outline-color: grey;"> <ul class="my-1 fg-3 f-2 my-3">
+
+<ul>
+	<li style="font-size:30px;"><em>Pre-Workout -</em></li>
+	<p style="font-size:20px">Designed to provide energy and aid endurance throughout a workout. They are typically taken 15-30 minutes before a workout, but can also be consumed during exercise...</p>
+	
+	  <ul>
+		<li><a class="link" href="<-- link to creatine page -->">Creatine</a></li>
+		<br>
+		<li><a class="link" href="<-- link to caffeine page -->">Caffeine</a></li>
+	  </ul>
+	</li>
+	<br>
+	<li style="font-size:30px"><em>Post-Workout -</em></li> 
+	<p style="font-size:20px">A variety of post-workout supplements are marketed to consumers to increase muscle mass through enhanced muscle repair, recovery, and growth.</p>
+	   <ul>
+		   <li><a class="link" href="<-- link to Protein page -->">Whey Protein</a></li>
+		   <br>
+		   <li><a class="link" href="<-- link to BCAA's page -->">Branched-Chain Amino Acids (BCAA's)</a></li>
+	   </ul>
+  </ul>
+
+
+			
+				</ul>
+			</div>
+		    </div>
+		    <div class="dyn-col">
+			<div class="px-2">
+			    <h3 class="text-uppercase text-center f-1 fg-2">Gallery</h3>
+				<style>
+					* {
+					  box-sizing: border-box;
+					}
+					
+					.column {
+					  float: left;
+					  width: 33.33%;
+					  padding: 6px;
+					}
+					
+					/* Clearfix (clear floats) */
+					.row::after {
+					  content: "";
+					  clear: both;
+					  display: table;
+					}
+					</style>
+				
+					<div class="row">
+					  <div class="column">
+						<img src="images/redbull.jfif" alt="caffeine-drinks" style="width:100%">
+					  </div>
+					  <div class="column">
+						<img src="images/supplements.tall.png" alt="creatine-powder" style="width:100%">
+					  </div>
+					  <div class="column">
+						<img src="images/shake.jfif" alt="protein-powder" style="width:100%">
+					  </div>
+					</div>
+
+					<div class="row">
+						<div class="column">
+						  <img src="images/pre.png" alt="pre-workout" style="width:100%">
+						</div>
+						<div class="column">
+						  <img src="images/creatine.png" alt="creatine-powder" style="width:100%">
+						</div>
+						<div class="column">
+						  <img src="images/protein-powder.png" alt="protein-powder" style="width:100%">
+						</div>
+					  </div>
+
+					  <div class="row">
+						<div class="column">
+						  <img src="images/drink.jpeg" alt="pre-workout" style="width:100%">
+						</div>
+						<div class="column">
+						  <img src="images/caffeinebottle.jfif" alt="creatine-powder" style="width:100%">
+						</div>
+						<div class="column">
+						  <img src="images/powder.jfif" alt="protein-powder" style="width:100%">
+						</div>
+					  </div>
+			</div>
+			</div>
+		    </div>
+
+		</div>
+	    </div>
+    
+		<div class="px-1 my-3">
+			<!-- TO DO: put your content here -->
+	
+			<!-- whenever you wish to add a title to your content
+				 use this <h3> with all its classes. It's already prestyled. -->
+			<h3 class="text-uppercase f-1 fg-2 text-center">Sport-nutrition online retailers - (visit)</h3>
+			
+	
+			
+			<p class="my-1 fg-3 f-2 my-3">
+				
+				<style>
+					* {
+					  box-sizing: border-box;
+					}
+					
+					.column {
+					  float: left;
+					  width: 33.33%;
+					  padding: 6px;
+					}
+					
+					/* Clearfix (clear floats) */
+					.row::after {
+					  content: "";
+					  clear: both;
+					  display: table;
+					}
+					</style>
+				
+					<div class="row">
+					  <div class="column">
+						<a href="https://www.myprotein.ie/"><img src="images/mp.png" alt="myprotein-website" style="width:90%"></a>
+					  </div>
+					  <div class="column">
+						<a href="https://rysesupps.com/"><img src="images/ryze.png" alt="creatine-powder" style="width:90%"></a>
+					  </div>
+					  <div class="column">
+						<a href="https://www.optimumnutrition.com/en-gb"><img src="images/on.png" alt="protein-powder" style="width:90%"></a>
+					  </div>
+					</div>
+
+				
+		
+	</section>
+	
+
+	<!-- FOOTER -->
+	<!-- Do not touch IT IS ALSO A WORK IN PROGRESS-->
+	<footer class="px-1 py-2 fg-3 p-2" style="background-color: black;">
+	    <p class="text-uppercase text-center p-1 fg-2"><b><i>This is student coursework</i></b></p>
+	    <div class="dyn-row">
+		<div class="dyn-col">
+		    <div class="px-2 text-center">
+			    N3mo Czenderlitch <br>
+			    Josh Casey <br>
+			    James <br>
+			    Robert <br>
+			    Fernando <br>
+			    Conor <br>
+		    </div>
+		</div>
+		<div class="dyn-col">
+		    <div class="px-2 text-center">
+			<p class="p-2 fg-2 text-uppercase">Contact</p>
+			<p>	
+			    <i class="fa fa-home me-3"></i> New York, NY 10012, US<br>
+			    <i class="fa fa-envelope me-3"></i> info@example.com<br>
+			    <i class="fa fa-phone me-3"></i> + 01 234 567 88<br>
+			    <i class="fa fa-print me-3"></i> + 01 234 567 89<br>
+
+		        </p>
+		    </div>
+		</div>
+	    </div>
+	    <div class="py-2 fg-2 text-center" > 
+                &copy; <a class="link" href="dcu.ie/"><b><i>DCU 2020-2021</i></b></a> 
+	    </div>
+	</footer>
+    </main>
+</body>

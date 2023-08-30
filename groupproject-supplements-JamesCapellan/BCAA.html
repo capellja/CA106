@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- TODO: Add a short description of your site here. 
+	       This is what google will look up when browsing so be sure to
+	       not forget to mention key buzz words e.g. fitness, diet, workout, etc. -->
+    <meta name="description" = "" />
+    <meta name="viewport" ="width=device-width, initial-scale=1">
+    <title>Culann's Hounds</title>
+
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <!-- TODO: If you want to insert your own .css uncoment this 
+	<link rel="stylesheet" type="text/css" href="<css name>">
+    -->   
+    
+    <!-- Don't worry about this. At. All.  -->
+    <script>
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+	var prevScrollPos = window.pageYOffset;
+	window.onscroll = function() {
+	    var currentScrollPos = window.pageYOffset;
+	    if (prevScrollPos > currentScrollPos) {
+	        document.getElementById("navbar").style.top = "0";
+	    } else {
+	        document.getElementById("navbar").style.top = "-50px";
+	    }
+	    prevScrollPos = currentScrollPos;
+	}
+    </script>
+</head>
+<body class="bg-0">
+    <main>
+	<!-- NAVBAR -->
+	<!--  DO NOT TOUCH, IT IS A WORK IN PROGRESS -->
+	<nav id="navbar" class="bg-tr px-1">
+	    <a class="f-2 fg-2 fgh-3 active">Home</a>
+	    <a class="f-2 fg-2 fgh-3">Bravo</a>
+	    <a class="f-2 fg-2 fgh-3">Charlie</a>
+	    <a class="f-2 fg-2 fgh-3">Delta</a>
+	    <a class="f-2 fg-2 fgh-3">Golf</a>
+	</nav>
+
+	<section>
+	    <!-- TO DO: Pick an image for your heading's background (Make it grayscale; its a matter of style) -->
+	    <div class="title-poster" style="background-image: url('images/BCAA.png');">
+		<div class="title-poster-mask">
+		    <div class="title-v-center h-center text-center">
+			<!-- TODO: Put your article's title here -->
+			<h1 class="f-3 fg-2">Branched Chain Amino Acids <br> ( BCAA's )
+			</h1>
+		    </div>
+		</div>
+	    </div>
+	</section>
+	
+	<section>
+	    <div class="px-1 my-3">
+		<!-- TO DO: put your content here -->
+
+		<!-- whenever you wish to add a title to your content
+		     use this <h3> with all its classes. It's already prestyled. -->
+		<h3 class="text-uppercase f-1 fg-2 text-center">What are BCAA's ?</h3>
+		
+		<!-- A quick word on how styling works. I wish to avoid unneccessary .css so I have made general
+                     purpuse classes. Just stick them on whichever element you want.
+		    
+			* bg-0, bg-1, bg-2, bg-3 - set the background color. 0 being the darkest color,
+						   and 3 being the lightest color in our color pallete. 
+			    - bg-tr - exists to make the background transparent if nesscessary. 
+			
+			* fg-0, ..., fg-3 - set the foreground color. Use this for text coloring. fg-0 and 
+					    bg-0 are the same color. So are the rest of the coresponding 
+                                            bg and fg colors. 
+			
+			* bgh-0, ..., bgh-3 - sets the background color vhen the mouse hovers over the element 
+
+			* fgh-0, ..., fgh-3 - sets the foreground color vhen the mouse hovers over the element 
+			
+			* my-0, ..., my-3 - will add vertical margins. 0 is no margins. 3 is the largest margin. 
+					    Use this to space your content, i.e. add sepparation to your paragraphs.  
+
+			* f-0, ..., f-3 - set the font size. You'll find yourself mostly using f-2. 
+		    
+			
+		    If you wanna use a button, put the .btn class on it. 
+
+		    When you use a link, put a link class on it.			
+
+		    For images do as you please. I'll put it in order later.
+
+		    Take care of your grammar 'cause I ain't gonna check.	
+
+
+		    Look at the below sample for examples. 
+		-->
+		
+		<p class="my-1 fg-3 f-2 my-3" style="text-indent:1cm;">
+			<b>Branched Chain Amino Acids (BCAAs)</b> refers to three amino acids: <a class="link" href="https://examine.com/supplements/leucine/">leucine, isoleucine, and valine.</a>
+		<br>Leucine plays an important role in muscle protein synthesis, while isoleucine induces glucose uptake into cells. Further research is needed to determine valine’s role in a BCAA supplement. Essentially, it is a a dietary supplement that increases muscle performance in short-duration, high-intensity resistance exercises.
+		</p>
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			
+			.column {
+			  float: left;
+			  width: 33.33%;
+			  padding: 6px;
+			}
+			
+			/* Clearfix (clear floats) */
+			.row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+			</style>
+		
+			<div class="row">
+			  <div class="column">
+				<img src="images/bcaashake.png" alt="bcaashake" style="width:100%">
+			  </div>
+			  <div class="column">
+				<img src="images/bcaadrink.png" alt="bcaadrink" style="width:100%">
+			  </div>
+			  <div class="column">
+				<img src="images/bcaapills.png" alt="bcaapills" style="width:100%">
+			  </div>
+			</div>
+
+		<p class="my-3 fg-3 f-2">
+			BCAAs are important to ingest on a daily basis, but many protein sources, such as meat and eggs, already provide BCAAs. Supplementation is unnecessary for people with a sufficiently high protein intake (1-1.5g per kg of bodyweight a day or more).
+		</p>
+	    </div>
+
+
+
+	    <!--
+		If you want to have two columns, copy this
+		
+		<div class="dyn-row">
+		    <div class="dyn-col">      |
+			<div class="px-2">     |
+			    Content Goes Here  |   YOU CAN COPY THIS PART AS MANY TIMES AS 
+			</div>                 |   YOU WANT, it will automatically fold over
+		    </div>                     |   when the screen is smaller
+		    
+		    <div class="dyn-col">
+			<div class="px-2">
+			    Content Goes Here
+			</div>
+		    </div>
+		</div>
+	    -->
+	    <div class="px-1">	
+		<h3 class="text-uppercase f-1 fg-2 text-center">How do you take BCAA's ?</h3>
+		<p class="my-1 fg-3 f-2">
+			They can be obtained from protein-rich foods such as chicken, red meat, fish, and eggs, but are also sold as dietary supplements in powdered or pill form.<br>
+			<ul class="f-2 fg-3"><li>The standard leucine dosage is 2–10g. The standard dosage for isoleucine is 48–72 mg per kilogram of bodyweight, assuming a non-obese person. A combination dose is 20 g of combined BCAAs, with a balanced ratio of leucine and isoleucine.</li>
+				<li>Isoleucine is used for increasing glucose uptake into cells, while leucine is used to improve muscle protein synthesis.</li>
+				<li>BCAA supplementation is not necessary if enough BCAAs are provided through the diet. Further research is needed to determine valine’s optimal dosage and reason for supplementation.</li>
+				<a>
+					<li>Ultimately, follow the intake instructions on product labels for same consumption.</li>
+				</a>
+			
+		</p>
+		<div class="dyn-row">
+		    <div class="dyn-col">
+			<div class="px-2">
+			    <h3 class="text-uppercase f-1 fg-2">informative video</h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Xw2Zl2r4toM" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		    </div>
+		    <div class="dyn-col">
+			<div class="px-2">
+			    <h3 class="text-uppercase f-1 fg-2">informative video</h3>
+			    <iframe width="560" height="315" src="https://www.youtube.com/embed/fPrkarBzrg0" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div>
+		    </div>
+
+		</div>
+	    </div>
+	</section>
+	
+
+	<!-- FOOTER -->
+	<!-- Do not touch IT IS ALSO A WORK IN PROGRESS-->
+	<footer class="px-1 py-2 fg-3 p-2" style="background-color: black;">
+	    <p class="text-uppercase text-center p-1 fg-2"><b><i>This is student coursework</i></b></p>
+	    <div class="dyn-row">
+		<div class="dyn-col">
+		    <div class="px-2 text-center">
+			<p class="p-2 fg-2 text-uppercase">Contributers</p>
+			    N3mo Czenderlitch <br>
+			    Josh Casey <br>
+			    James <br>
+			    Robert <br>
+			    Fernando <br>
+			    Conor <br>
+		    </div>
+		</div>
+		<div class="dyn-col">
+		    <div class="px-2 text-center">
+			<p class="p-2 fg-2 text-uppercase">Contact</p>
+			<p>	
+			    <i class="fa fa-home me-3"></i> New York, NY 10012, US<br>
+			    <i class="fa fa-envelope me-3"></i> info@example.com<br>
+			    <i class="fa fa-phone me-3"></i> + 01 234 567 88<br>
+			    <i class="fa fa-print me-3"></i> + 01 234 567 89<br>
+
+		        </p>
+		    </div>
+		</div>
+	    </div>
+	    <div class="py-2 fg-2 text-center" > 
+                &copy; <a class="link" href="dcu.ie/"><b><i>DCU 2020-2021</i></b></a> 
+	    </div>
+	</footer>
+    </main>
+</body>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- TODO: Add a short description of your site here. 
+	       This is what google will look up when browsing so be sure to
+	       not forget to mention key buzz words e.g. fitness, diet, workout, etc. -->
+    <meta name="description" = "" />
+    <meta name="viewport" ="width=device-width, initial-scale=1">
+    <title>Culann's Hounds</title>
+
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <!-- TODO: If you want to insert your own .css uncoment this 
+	<link rel="stylesheet" type="text/css" href="<css name>">
+    -->   
+    
+    <!-- Don't worry about this. At. All.  -->
+    <script>
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+	var prevScrollPos = window.pageYOffset;
+	window.onscroll = function() {
+	    var currentScrollPos = window.pageYOffset;
+	    if (prevScrollPos > currentScrollPos) {
+	        document.getElementById("navbar").style.top = "0";
+	    } else {
+	        document.getElementById("navbar").style.top = "-50px";
+	    }
+	    prevScrollPos = currentScrollPos;
+	}
+    </script>
+</head>
+<body class="bg-0">
+    <main>
+	<!-- NAVBAR -->
+	<!--  DO NOT TOUCH, IT IS A WORK IN PROGRESS -->
+	<nav id="navbar" class="bg-tr px-1">
+	    <a class="f-2 fg-2 fgh-3 active">Home</a>
+	    <a class="f-2 fg-2 fgh-3">Bravo</a>
+	    <a class="f-2 fg-2 fgh-3">Charlie</a>
+	    <a class="f-2 fg-2 fgh-3">Delta</a>
+	    <a class="f-2 fg-2 fgh-3">Golf</a>
+	</nav>
+
+	<section>
+	    <!-- TO DO: Pick an image for your heading's background (Make it grayscale; its a matter of style) -->
+	    <div class="title-poster" style="background-image: url('images/background-creatine.jfif');">
+		<div class="title-poster-mask">
+		    <div class="title-v-center h-center text-center">
+			<!-- TODO: Put your article's title here -->
+			<h1 class="f-3 fg-2">Creatine-Monohydrate <br> ( Creatine )
+			</h1>
+		    </div>
+		</div>
+	    </div>
+	</section>
+	
+	<section>
+	    <div class="px-1 my-3">
+		<!-- TO DO: put your content here -->
+
+		<!-- whenever you wish to add a title to your content
+		     use this <h3> with all its classes. It's already prestyled. -->
+		<h3 class="text-uppercase f-1 fg-2 text-center">What is Creatine?</h3>
+		
+		<!-- A quick word on how styling works. I wish to avoid unneccessary .css so I have made general
+                     purpuse classes. Just stick them on whichever element you want.
+		    
+			* bg-0, bg-1, bg-2, bg-3 - set the background color. 0 being the darkest color,
+						   and 3 being the lightest color in our color pallete. 
+			    - bg-tr - exists to make the background transparent if nesscessary. 
+			
+			* fg-0, ..., fg-3 - set the foreground color. Use this for text coloring. fg-0 and 
+					    bg-0 are the same color. So are the rest of the coresponding 
+                                            bg and fg colors. 
+			
+			* bgh-0, ..., bgh-3 - sets the background color vhen the mouse hovers over the element 
+
+			* fgh-0, ..., fgh-3 - sets the foreground color vhen the mouse hovers over the element 
+			
+			* my-0, ..., my-3 - will add vertical margins. 0 is no margins. 3 is the largest margin. 
+					    Use this to space your content, i.e. add sepparation to your paragraphs.  
+
+			* f-0, ..., f-3 - set the font size. You'll find yourself mostly using f-2. 
+		    
+			
+		    If you wanna use a button, put the .btn class on it. 
+
+		    When you use a link, put a link class on it.			
+
+		    For images do as you please. I'll put it in order later.
+
+		    Take care of your grammar 'cause I ain't gonna check.	
+
+
+		    Look at the below sample for examples. 
+		-->
+		
+		<p class="my-1 fg-3 f-2 my-3" style="text-indent:1cm;">
+		    <b>Creatine</b> is a naturally occurring compound found in skeletal muscle that is synthesized in the body from amino acids and can be obtained from red meat and seafood. In the body, it helps produce adenosine triphosphate <b>(ATP)</b>, which provides energy for muscles. Creatine is a popular workout supplement marketed to increase athletic performance, especially for weight training.
+		<br>Essentially, it is a a dietary supplement that increases muscle performance in short-duration, high-intensity resistance exercises.
+		</p>
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			
+			.column {
+			  float: left;
+			  width: 33.33%;
+			  padding: 6px;
+			}
+			
+			/* Clearfix (clear floats) */
+			.row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+			</style>
+		
+			<div class="row">
+			  <div class="column">
+				<img src="images/creatine1.jpg" alt="creating-powder" style="width:100%">
+			  </div>
+			  <div class="column">
+				<img src="images/creatine2.jpg" alt="creatine-bag" style="width:100%">
+			  </div>
+			  <div class="column">
+				<img src="images/creatine3.jpeg" alt="creatine-shake" style="width:100%">
+			  </div>
+			</div>
+
+		<p class="my-3 fg-3 f-2">
+		   <em><a class="link" href="https://examine.com/supplements/creatine/">'Creatine is among the most well-researched and effective supplements.' - Kamel Patel, Examine.com</em></a> <br>
+			There are common misconceptions of danger from taking creatine. (Loss of hair, testicular shrinkage, etc...)<br>
+			However, Most of the supposed dangers of creatine are unfounded. Due to the bad reputation of performance-enhancing drugs, it has been wrongfully equated with the worst examples.
+		</p>
+	    </div>
+
+
+
+	    <!--
+		If you want to have two columns, copy this
+		
+		<div class="dyn-row">
+		    <div class="dyn-col">      |
+			<div class="px-2">     |
+			    Content Goes Here  |   YOU CAN COPY THIS PART AS MANY TIMES AS 
+			</div>                 |   YOU WANT, it will automatically fold over
+		    </div>                     |   when the screen is smaller
+		    
+		    <div class="dyn-col">
+			<div class="px-2">
+			    Content Goes Here
+			</div>
+		    </div>
+		</div>
+	    -->
+	    <div class="px-1">	
+		<h3 class="text-uppercase f-1 fg-2 text-center">How do you take Creatine?</h3>
+		<p class="my-1 fg-3 f-2">
+		    Creatine is most commonly found in powder form, micronized creatine monohydrate, which dissolves in water more easily and can be more practical. Often sold in tubs or bags.  <br>
+			<ul class="f-2 fg-3"><li>It is recommended that 5g (one scoop) of Creatine is consumed daily, whether that be dissolved in water or a protein shake.</li>
+				<li>Individuals may sometimes choose to enter a 'loading phase' of creatine, which involves taking higher quantities weeks before in order to saturate their body cells with creatine.</li>
+				<li>Sensations of stomach cramps or discomfort may affect new users, but dissappear after extended use.</li>
+			
+		</p>
+		<div class="dyn-row">
+		    <div class="dyn-col">
+			<div class="px-2">
+			    <h3 class="text-uppercase f-1 fg-2">informative podcast</h3>
+				<iframe src="https://open.spotify.com/embed/episode/1YMLMVjDB3W1mgWkh6alUc?utm_source=generator" width="100%" height="290" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+			</div>
+		    </div>
+		    <div class="dyn-col">
+			<div class="px-2">
+			    <h3 class="text-uppercase f-1 fg-2">informative video</h3>
+			    <iframe width="560" height="315" src="https://www.youtube.com/embed/NclX6EW0pr0" title="YouTube video player" frameborder="30" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+				
+			</div>
+		    </div>
+
+		</div>
+	    </div>
+	</section>
+	
+
+	<!-- FOOTER -->
+	<!-- Do not touch IT IS ALSO A WORK IN PROGRESS-->
+	<footer class="px-1 py-2 fg-3 p-2" style="background-color: black;">
+	    <p class="text-uppercase text-center p-1 fg-2"><b><i>This is student coursework</i></b></p>
+	    <div class="dyn-row">
+		<div class="dyn-col">
+		    <div class="px-2 text-center">
+			<p class="p-2 fg-2 text-uppercase">Contributers</p>
+			    N3mo Czenderlitch <br>
+			    Josh Casey <br>
+			    James <br>
+			    Robert <br>
+			    Fernando <br>
+			    Conor <br>
+		    </div>
+		</div>
+		<div class="dyn-col">
+		    <div class="px-2 text-center">
+			<p class="p-2 fg-2 text-uppercase">Contact</p>
+			<p>	
+			    <i class="fa fa-home me-3"></i> New York, NY 10012, US<br>
+			    <i class="fa fa-envelope me-3"></i> info@example.com<br>
+			    <i class="fa fa-phone me-3"></i> + 01 234 567 88<br>
+			    <i class="fa fa-print me-3"></i> + 01 234 567 89<br>
+
+		        </p>
+		    </div>
+		</div>
+	    </div>
+	    <div class="py-2 fg-2 text-center" > 
+                &copy; <a class="link" href="dcu.ie/"><b><i>DCU 2020-2021</i></b></a> 
+	    </div>
+	</footer>
+    </main>
+</body>
